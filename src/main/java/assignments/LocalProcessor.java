@@ -50,7 +50,7 @@ public class LocalProcessor {
     }
 
     @FullNameProcessorGeneratorAnnotation
-    public String fullNameProcessorGenerate(LinkedList<String> stringList) {
+    public String fullNameProcessorGenerate(List<String> stringList) {
         stringBuilder = new StringBuilder();
         for (String str : stringList){
            stringBuilder.append(str).append(" ");

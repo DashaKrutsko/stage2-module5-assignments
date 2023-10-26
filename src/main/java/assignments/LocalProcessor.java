@@ -38,13 +38,9 @@ public class LocalProcessor {
 
     @ListIteratorAnnotation
     public void listIterate(List<String> stringList) {
-        stringArrayList = new LinkedList<>(stringList);
-        for (String str : stringArrayList){
-            try {
+        for (String str : stringList){
+           if (str != null){
                 System.out.println(str.hashCode());
-            }
-            catch (IllegalStateException  e){
-                System.out.println(e);
             }
         }
     }
